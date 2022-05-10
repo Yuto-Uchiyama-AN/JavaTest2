@@ -1,23 +1,15 @@
 package jp.co.aforce.test;
 
 public class PracticeTest8 {
-	public static void main(String args[]) {
-		printHello();
-		printRandomMessage();
-		printMessage(5, "Hello");
-		printRectangleArea(10, 10);
-		getWeatherForecast();
-		isEvenNumber(3);
-		getMessage("山田", true);
-	}
+
 
 	// 練習問題1
-	public static void printHello() {
+	public  void printHello() {
 		System.out.println("Hello");
 	}
 
 	// 練習問題2
-	public static void printRandomMessage() {
+	public  void printRandomMessage() {
 		int n = (int) (3 * Math.random());
 
 		if (n == 0) {
@@ -30,24 +22,24 @@ public class PracticeTest8 {
 	}
 
 	// 練習問題3
-	public static void printMessage(String message) {
+	public  void printMessage(String message) {
 		System.out.println(message);
 	}
 
 	// 練習問題4
-	public static void printMessage(int count, String message) {
+	public  void printMessage(int count, String message) {
 		for (int i = 1; i <= count; i++) {
 			System.out.println(message);
 		}
 	}
 
 	// 練習問題5
-	public static void printRectangleArea(double height, double width) {
+	public  void printRectangleArea(double height, double width) {
 		System.out.println(height * width / 2);
 	}
 
 	// 練習問題6
-	public static String getWeatherForecast() {
+	public  String getWeatherForecast() {
 		int k = (int) (3 * Math.random());
 		String str = "";
 		if (k == 0) {
@@ -77,7 +69,7 @@ public class PracticeTest8 {
 
 	// 練習問題7
 
-	public static boolean isEvenNumber(int value) {
+	public  boolean isEvenNumber(int value) {
 
 		if (value % 2 == 0) {
 			System.out.println("true");
@@ -90,7 +82,7 @@ public class PracticeTest8 {
 	}
 
 	// 練習問題8
-	public static String getMessage(String name, boolean isKid) {
+	public  String getMessage(String name, boolean isKid) {
 		if (isKid) {
 			System.out.println("こんにちは。" + name + "ちゃん。");
 		} else {
@@ -102,10 +94,27 @@ public class PracticeTest8 {
 	}
 
 	// 練習問題9
-	public static String getLongestString(String[] array) {
+	public  String getLongestString(String[] array) {
+		String str = "";
+		for(int i = 0; i < array.length; i++ ) {
+			if(str.length() <= array[i].length());
+			  str = array[i];
+		}
+
+		return str;
+
+	}
+
+	// 練習問題10
+	public  boolean isAdult(Person person) {
+
+		if(person.getAge() >= 20) {
+			return true;
+		}else {
+			return false;
+		}
 
 
-		return null;
 
 	}
 
