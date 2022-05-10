@@ -10,7 +10,7 @@ public class Main {
 		practiceTest8.getWeatherForecast();
 		practiceTest8.isEvenNumber(3);
 		practiceTest8.getMessage("山田", true);
-		String[] name = { "うちやま", "やま", "はやし", "たなか"};
+		String[] name = {"aaa","bbbb","cccc"};
 		System.out.println(practiceTest8.getLongestString(name));
 		Person person = new Person("山田", 20);
 		System.out.println(practiceTest8.isAdult(person));
