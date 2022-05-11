@@ -22,18 +22,18 @@ public class PracticeTest2 {
 
 		// 練習問題4
 		System.out.println(++ syosu);
-		
-		// 練習問題5
+
+		// 練習問題5 ★
 		int age = 22;
 		Random random = new Random();
 		int randomNumber = random.nextInt(100);
-		
+
 		if(age > randomNumber) {
 			System.out.println("私の方が年上です");
-		
+
 		}else if(age < randomNumber) {
 			System.out.println("私の方が年下です");
-		
+
 		}else {
 			System.out.println("同い年です");
 		}
