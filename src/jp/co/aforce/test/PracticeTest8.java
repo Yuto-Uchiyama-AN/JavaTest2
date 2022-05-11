@@ -35,7 +35,7 @@ public class PracticeTest8 {
 
 	// 練習問題5
 	public  void printRectangleArea(double height, double width) {
-		System.out.println(height * width / 2);
+		System.out.println(height * width);
 	}
 
 	// 練習問題6
